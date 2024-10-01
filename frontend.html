@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUGGET TRAP Token</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.6.0/dist/web3.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+        }
+        input, button {
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>NUGGET TRAP (NGT) Token Interface</h1>
+
+        <!-- Balance Display -->
+        <h3>Your NGT Token Balance: <span id="tokenBalance">0</span></h3>
+        <h3>Your ETH Balance: <span id="ethBalance">0</span></h3>
+
+        <!-- Buy Token Section -->
+        <h3>Buy NGT Tokens</h3>
+        <input type="text" id="ethAmount" placeholder="Amount of ETH">
+        <button id="buyToken">Buy NGT Tokens</button>
+
+        <!-- Transfer Token Section -->
+        <h3>Transfer NGT Tokens</h3>
+        <input type="text" id="transferTo" placeholder="Recipient Address">
+        <input type="text" id="transferAmount" placeholder="Amount of NGT">
+        <button id="transferToken">Transfer NGT</button>
+
+        <!-- Approve Section -->
+        <h3>Approve NGT Tokens</h3>
+        <input type="text" id="approveSpender" placeholder="Spender Address">
+        <input type="text" id="approveAmount" placeholder="Amount of NGT">
+        <button id="approveToken">Approve</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
